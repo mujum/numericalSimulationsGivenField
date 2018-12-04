@@ -1,0 +1,15 @@
+//
+// Created by ladislaus on 04.12.18.
+//
+
+#ifndef NUMERICALSIMULATIONSGIVENFIELD_TEST_H
+#define NUMERICALSIMULATIONSGIVENFIELD_TEST_H
+
+
+class Test {
+public:
+    Test();
+};
+
+
+#endif //NUMERICALSIMULATIONSGIVENFIELD_TEST_H

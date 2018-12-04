@@ -5,7 +5,6 @@
 #ifndef NUMERICALSIMULATIONSGIVENFIELD_SIMULATIONS_H
 #define NUMERICALSIMULATIONSGIVENFIELD_SIMULATIONS_H
 
-
 class Field {
 public:
     int size_x;
@@ -22,7 +21,7 @@ public:
             }
         }
     }
+    void test();
 };
-
 
 #endif //NUMERICALSIMULATIONSGIVENFIELD_SIMULATIONS_H
