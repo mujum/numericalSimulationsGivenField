@@ -27,7 +27,7 @@ double *computePy(double *py, double *E0, double dt, double *B0, double *px, dou
 double *computePx(double *py, double *E0, double dt, double *B0, double *px, double *gamma, int size);
 double *computeY(double *y, double *py, double dt, double *gamma, int size);
 double *computeX(double *x, double *px, double dt, double *gamma, int size);
-void putColumnIntoTensor(double ****PP, int i, int size, int j, double *column);
+void putColumnIntoTensor(double ***PP, int i, int size, int j, double *column);
 double *get5(double *E0, double *B0, double *px, double *gamma, int size);
 double *get6(double *BO, double *py, double *gamma, int size);
 double *get7(double t, int size);
@@ -84,15 +84,15 @@ Test::Test() {
             ii=0;
             //print?
             int iii = (int) i/10;
-            putColumnIntoTensor(&PP, 0, kmax, iii + 1, x); //TODO check this out
-            putColumnIntoTensor(&PP, 1, kmax, iii + 1, y);
-            putColumnIntoTensor(&PP, 2, kmax, iii + 1, px);
-            putColumnIntoTensor(&PP, 3, kmax, iii + 1, py);
+            putColumnIntoTensor(PP, 0, kmax, iii + 1, x); //TODO check this out
+            putColumnIntoTensor(PP, 1, kmax, iii + 1, y);
+            putColumnIntoTensor(PP, 2, kmax, iii + 1, px);
+            putColumnIntoTensor(PP, 3, kmax, iii + 1, py);
             //EY
             //HZ
-            putColumnIntoTensor(&PP, 4, kmax, iii + 1, get5(E0, B0, px, gamma, kmax));
-            putColumnIntoTensor(&PP, 5, kmax, iii + 1, get6(B0, py, gamma, kmax));
-            putColumnIntoTensor(&PP, 6, kmax, iii + 1, get7(t, kmax));
+            putColumnIntoTensor(PP, 4, kmax, iii + 1, get5(E0, B0, px, gamma, kmax));
+            putColumnIntoTensor(PP, 5, kmax, iii + 1, get6(B0, py, gamma, kmax));
+            putColumnIntoTensor(PP, 6, kmax, iii + 1, get7(t, kmax));
 
         }
         ii++;
@@ -229,10 +229,10 @@ double *computeX(double *x, double *px, double dt, double *gamma, int size) {
     return result;
 }
 
-void putColumnIntoTensor(double ****PP, int i, int size, int k, double *column) {
+void putColumnIntoTensor(double ***PP, int i, int size, int k, double *column) {
 
     for (int index = 0; index < size; index++) {
-        *PP[i][index][k] = column[index];
+        PP[i][index][k] = column[index];
     }
 }
 
