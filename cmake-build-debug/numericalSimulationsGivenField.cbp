@@ -44,6 +44,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ladislaus/workspace/bin/hdf5-1.10.4-linux-centos7-x86_64-gcc485-shared/include"/>
+					<Add directory="/home/ladislaus/workspace/bin/hdf5-1.10.4-linux-centos7-x86_64-gcc485-shared/lib"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -67,6 +69,8 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/ladislaus/workspace/bin/hdf5-1.10.4-linux-centos7-x86_64-gcc485-shared/include"/>
+					<Add directory="/home/ladislaus/workspace/bin/hdf5-1.10.4-linux-centos7-x86_64-gcc485-shared/lib"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>

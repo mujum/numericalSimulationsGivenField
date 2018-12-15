@@ -12,6 +12,8 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/ladislaus/workspace/bin/hdf5-1.10.4-linux-centos7-x86_64-gcc485-shared/include"
+  "/home/ladislaus/workspace/bin/hdf5-1.10.4-linux-centos7-x86_64-gcc485-shared/lib"
   )
 
 # Targets to which this target links.

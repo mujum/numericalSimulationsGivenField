@@ -6,15 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/ladislaus/CLionProjects/numericalSimulationsGivenField/Test.cpp
-cstdio
--
-bits/exception.h
--
-cmath
--
-Test.h
-/home/ladislaus/CLionProjects/numericalSimulationsGivenField/Test.h
-
-/home/ladislaus/CLionProjects/numericalSimulationsGivenField/Test.h
-
